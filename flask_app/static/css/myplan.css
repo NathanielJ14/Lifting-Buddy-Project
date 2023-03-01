@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('/static/images/Cardio\ Room\ Main.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    height: 80px;
+    position: fixed;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 30%;
+}
+
+li {
+    margin: 0px 30px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #cc0007be;
+}
+
+h2 {
+    font-size: 70px;
+    color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 250px;
+}
+
+table {
+    border: 2px solid white;
+    font-size: 30px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+td{
+    color: white;
+}
+
+.button {
+    width: 100%;
+    font-size: 30px;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #cc0007be;
+    font-size: 35px;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    border: 2px solid #cc0007be;
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.651);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <!-- Navbar / is sticky so and should be on everypage -->
+    <nav>
+        <h1>Lifting Buddy</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">My Workouts</a></li>
+            <li><a href="/new/plan">Create a Workout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Middle text -->
+    <div class="space">
+        <p>Tracking your <span class="span">strength</span> every <span class="span">rep</span> of the way</p>
+    </div>
+
+    <!-- Buttons on the home page -->
+    <div>
+        <a class="button" href="/dashboard">My Workouts</a>
+        <a class="button" href="/new/plan">Create Workout</a>
+    </div>
+
+</body>
+</html>

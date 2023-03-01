@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+/* Navbar styling */
+
+nav {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    height: 80px;
+    position: fixed;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 30%;
+}
+
+li {
+    margin: 0px 30px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #cc0007be;
+}
+
+/* Body Styling */
+
+h2 {
+    font-size: 80px;
+    color: white;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 230px;
+}
+
+span {
+    color: #cc0007;
+}
+
+.add {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.add a {
+    font-size: 40px;
+    background-color: #cc0007;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    transition: transform 250ms;
+
+}
+
+.add a:hover{
+    border: 2px solid white;
+    transform: translateY(-10px);
+}
+
+table {
+    width: 100%;
+    color: white;
+    font-size: 30px;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 2px white solid;
+    
+}
+
+thead {
+    font-size: 40px;
+    text-align: center;
+    background-color: #cc0007;
+}
+
+.table {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.act {
+    margin: 15px 0px;
+}
+
+.act:hover {
+    color: #cc0007;
+}
+
+.user {
+    padding-left: 20px;
+}
+
+.name {
+    text-decoration: underline 2px white;
+    text-align: center;
+}
+
+.name:hover {
+    color: #cc0007;
+    text-decoration: underline 2px #cc0007;
+}
