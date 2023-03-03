@@ -62,3 +62,58 @@ h2{
 #title {
     color: #cc0007;
 }
+
+
+
+
+button{
+    color: white;
+    font-size: 40px;
+    width: 170px;
+    height: 70px;
+    background-color: #cc0007;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    margin: 5px 30px;
+}
+
+button:hover {
+    background-color: #cc0007;
+    border: 2px solid white;
+}
+
+form {
+    margin: 50px auto;
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 55px;
+}
+
+input {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#num {
+    width: 100px;
+}
+
+p {
+    font-size: 40px;
+    color: white;
+    background-color: #f76e73;
+    width: 40%;
+    text-align: center;
+    margin: 10px auto;
+}

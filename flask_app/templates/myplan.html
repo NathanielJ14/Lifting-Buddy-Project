@@ -21,20 +21,20 @@
     </nav>
 
     <div class="title">
-        <h2>Workout Plan Name</h2>
+        <h2>{{workout.name}}</h2>
     </div>
 
     <table>
         <tr>
-            <td>filler</td>
-            <td>filler</td>
-            <td>filler</td>
+            <td>Name</td>
+            <td>Muscle group</td>
+            <td>Sets/Reps</td>
             <td><a href="">Delete</a></td>
         </tr>
     </table>
 
     <div class="button">
-        <a href="/exercise" class="btn">Add Exercise</a>
+        <a href="/exercise/{{workout.id}}" class="btn">Add Exercise</a>
     </div>
 
 </body>

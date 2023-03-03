@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/newplan.css') }}">
 </head>
 <body>
@@ -24,22 +25,28 @@
         <h2>Update a <span> Workout </span> Plan</h2>
     </div>
     
-    <form action="">
+    <form action="/update/workout/{{workout.id}}", method="post">
         <div class="holder">
             <label for="name">Workout Name:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" value="{{workout.name}}">
         </div>
 
         <div class="holdertwo">
             <label for="description">Description:</label>
-            <textarea name="description" id="description" cols="53" rows="10"></textarea>
+            <textarea name="description" id="description" cols="53" rows="10">{{workout.description}}</textarea>
         </div>
 
         <div class="btm">
-            <a class="button" href="">Update</a>
+            <button class="button">Update</button>
         </div>
     </form>
-    
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p class="alert alert-danger container">{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
 
 </body>
 </html>

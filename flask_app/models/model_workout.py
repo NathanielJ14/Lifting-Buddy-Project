@@ -2,7 +2,7 @@ from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash, session
 
 # model the class after the friend table from our database
-from flask_app.models import model_workout
+from flask_app.models import model_exercise
 
 
 DB = "lifting_buddy_schema"
@@ -40,11 +40,10 @@ class Workout:
 
 
     @classmethod
-    def get_one(cls, data):
+    def get_one(cls, workout_id):
         query = "SELECT * FROM workouts WHERE id = %(id)s"
+        data = {'id': workout_id}
         results = connectToMySQL(DB).query_db(query, data) 
-        if not results:
-            return False
         return cls(results[0])
     
     
@@ -57,3 +56,15 @@ class Workout:
         for dict in results:
             all_workouts.append( cls(dict) )
         return all_workouts
+    
+
+    @classmethod
+    def update(cls, data):
+        query = "UPDATE workouts SET name = %(name)s, description = %(description)s WHERE id = %(id)s;"
+        return connectToMySQL(DB).query_db(query,data)
+    
+    @classmethod
+    def delete(cls, workout_id):
+        query = "DELETE FROM workouts WHERE id = %(id)s;"
+        data = {"id": workout_id}
+        return connectToMySQL(DB).query_db(query, data)

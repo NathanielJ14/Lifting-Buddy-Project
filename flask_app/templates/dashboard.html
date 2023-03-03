@@ -43,9 +43,9 @@
             <tbody>
                 {% for workouts in all_workouts %}
                 <tr>
-                    <td class="name"><a class="name" href="">{{workouts.name}}</a></td>
+                    <td class="name"><a class="name" href="/myplan/{{workouts.id}}">{{workouts.name}}</a></td>
                     <td class="user">{{workouts.description}}</td>
-                    <td class="actions"><a class="act" href="/update">Update</a> <a class="act" href="">Delete</a></td>
+                    <td class="actions"><a class="act" href="/update/{{workouts.id}}">Update</a> <a class="act" href="/workout/delete/{{workouts.id}}">Delete</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

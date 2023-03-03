@@ -99,13 +99,14 @@ input {
 textarea {
     margin-left: 95px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .button {
     background-color: #cc0007be;
     font-size: 40px;
     padding: 12px 40px;
+    color: white;
 }
 
 .btm {
